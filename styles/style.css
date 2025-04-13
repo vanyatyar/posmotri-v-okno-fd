@@ -9,24 +9,23 @@ html {
 }
 
 .page {
-  display: flex;
-  position: relative;
-  align-items: center;
-  width: 1200px;
-  block-size: 100%;
-  margin: auto;
-  color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  background-color: #1b1919;
+display:grid;
+place-items: center;
+block-size: 100%;
+inline-size: 1200px;
+margin: auto;
+color: #fff;
+font-family: 'Fira Sans Condensed', sans-serif;
+font-size: 18px;
+background-color: #1b1919;
   }
 
 .content{
-width: 534px;
-display: grid;
-grid-template-columns: 711px 399px;
+position:absolute;
+display: flex;
+align-items: flex-end;
+inline-size: 1140px;
 gap: 30px;
-position: relative;
 } 
 
 .result{
@@ -34,7 +33,6 @@ display: flex;
 flex-direction: column;
 grid-column: 1;
 margin-top: 76px;
-
 }
 
 .result__video-container{
